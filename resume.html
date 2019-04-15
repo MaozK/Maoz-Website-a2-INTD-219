@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html class="resume">
+	<head>
+		<link rel="stylesheet" href="css/stylesheet.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<script src="https://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.0.js"></script>
+		<meta charset="utf-8">
+		<title> Saul Bass-Resume </title>
+		<nav>
+		  <a href="home.html">Home</a> 
+		  <a href="resume.html">Resume</a> 
+		  <a href="archive.html">Archive</a> 
+		  <a href="films.html">Films</a>
+		</nav>
+	</head>
+	
+	<body>
+		<div class="circleRe"> </div>
+		<div class="lines" > 
+		<div id="yellowLine"></div>
+		<div id="blueLine"></div>
+		<div id="vBlueLine">
+
+			<img id="carmenJones" src="images/CarmenJones.jpg">
+			<h3 class="second"> Film Title Sequences</h3>
+				<p style="margin: 70px 0px 0px; width: 500px" class="revealOnScroll" data-animation="fadeInRight"> Bass became widely known in the film industry after creating the title sequence for Otto Preminger's The Man with the Golden Arm (1955). The subject of the film was a jazz musician's struggle to overcome his heroin addiction, a taboo subject in the mid-1950s. Bass decided to create an innovative title sequence to match the film's controversial subject. He chose the arm as the central image, as it is a strong image relating to heroin addiction. The titles featured an animated, white on black paper cut-out arm of a heroin addict. As he hoped, it caused quite a sensation.</p>
+
+				<p style="margin: 10px 0px 0px; width: 500px" class="revealOnScroll" data-animation="fadeInRight">For Alfred Hitchcock, Bass provided effective, memorable title sequences, inventing a new type of kinetic typography, for North by Northwest (1959), Vertigo (1958), working with John Whitney, and Psycho (1960). It was this kind of innovative, revolutionary work that made Bass a revered graphic designer. Before the advent of Bass's title sequences in the 1950s, titles were generally static, separate from the movie, and it was common for them to be projected onto the cinema curtains, the curtains only being raised right before the first scene of the movie. In 1960, Bass wrote an article for Graphis magazine called "Film Titles – a New Field for the Graphic Designer," which has been revered as a milestone for "the consecration of the movie credit sequence as a design object."[5][6] One of the most studied film credit designers, Bass is known for integrating a stylistic coherence between the designs and the films in which they appear.</p>
+		</div>
+		<div id="greenLine"></div>
+			
+		<div id="vGreenLine">
+			<iframe id="psychoVideo" width="560" height="315" src="https://www.youtube.com/embed/-DU0IVmBgsQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+			<h3 class="third"> Alfred Hitchcock </h3>
+
+				<p style="margin: 70px 10px 0px; width: 500px" class="revealOnScroll" data-animation="fadeInRight"> For Alfred Hitchcock, Bass provided effective, memorable title sequences, inventing a new type of kinetic typography, for North by Northwest (1959), Vertigo (1958), working with John Whitney, and Psycho (1960). It was this kind of innovative, revolutionary work that made Bass a revered graphic designer. Before the advent of Bass's title sequences in the 1950s, titles were generally static, separate from the movie, and it was common for them to be projected onto the cinema curtains, the curtains only being raised right before the first scene of the movie.[4] In 1960, Bass wrote an article for Graphis magazine called "Film Titles – a New Field for the Graphic Designer," which has been revered as a milestone for "the consecration of the movie credit sequence as a design object."[5][6] One of the most studied film credit designers, Bass is known for integrating a stylistic coherence between the designs and the films in which they appear.[6]</p>
+
+				<p style="margin: 10px 10px 0px; width: 500px" class="revealOnScroll" data-animation="fadeInRight"> Bass once described his main goal for his title sequences as being to "try to reach for a simple, visual phrase that tells you what the picture is all about and evokes the essence of the story".[7] Another philosophy that Bass described as influencing his title sequences was the goal of getting the audience to see familiar parts of their world in an unfamiliar way. Examples of this or what he described as "making the ordinary extraordinary" can be seen in Walk on the Wild Side (1962) where an ordinary cat becomes a mysterious prowling predator, and in Nine Hours to Rama (1963) where the interior workings of a clock become an expansive new landscape.[8] In the 1950s, Saul Bass used a variety of techniques, from cut-out animation for Anatomy of a Murder (1958), to fully animated mini-movies such as the epilogue for Around the World in 80 Days (1956), and live-action sequences.</p>
+
+		</div>
+			
+		<div id="pinkLine"></div>
+		<div id="purpleLine"></div>
+		<div id="whiteLine"></div>
+		<h2 style="padding: 20px 0px 0px"> Resume </h2>
+		<h3> Early Life</h3>
+
+		<p style="margin-bottom: 5px" class="revealOnScroll" data-animation="fadeInRight"> Saul Bass was born on May 8, 1920 in the Bronx, New York, United States, to Eastern European Jewish immigrant parents. He graduated from James Monroe High School in the Bronx and studied part-time at the Art Students League in Manhattan until attending night classes with György Kepes at Brooklyn College.[2] In 1938, Saul married Ruth Cooper and they had two children, Robert in 1942 and Andrea in 1946.</p>
+
+		<p style="margin: 0px 50px 10px width: 500px" class="revealOnScroll" data-animation="fadeInRight">He began his time in Hollywood in the 1940s, designing print advertisements for films including Champion (1949), Death of a Salesman (1951) and The Moon Is Blue (1953), directed by Otto Preminger. His next collaboration with Preminger was to design a film poster for his 1954 film Carmen Jones. Preminger was so impressed with Bass's work that he asked him to produce the title sequence as well. This was when Bass first saw the opportunity to create a title sequence which would ultimately enhance the experience of the audience and contribute to the mood and the theme of the movie within the opening moments. Bass was one of the first to realize the creative potential of the opening and closing credits of a movie.</p>
+
+
+	</div>
+
+	</body>
+</html>
+<script>
+$(function() {
+
+    var $window = $(window),
+        win_height_padded = $window.height() * 1.05,
+        isTouch = Modernizr.touch;
+
+    if (isTouch) {
+        $('.revealOnScroll').addClass('animated');
+    }
+
+    $window.on('scroll', revealOnScroll);
+
+    function revealOnScroll() {
+        var scrolledTop = $window.scrollTop(),
+			scrolledBottom = $window.scrollTop + $window.height(),
+            win_height_padded = $window.height() * 1.05;
+
+        // Showed...
+        $(".revealOnScroll:not(.animated)").each(function() {
+            var $this = $(this),
+                offsetTop = $this.offset().top,
+                offsetBottom = $this.offset().top + $this.outerHeight();
+            if ((scrolledTop + win_height_padded > offsetTop) || (scrolledTop < offsetBottom)) {
+                if ($this.data('timeout')) {
+                    window.setTimeout(function() {
+                        $this.addClass('animated ' + $this.data('animation'));
+                    }, parseInt($this.data('timeout'), 10));
+                } else {
+                    $this.addClass('animated ' + $this.data('animation'));
+                }
+            }
+        });
+        // Hidden...
+        $(".revealOnScroll.animated").each(function(index) {
+            var $this = $(this),
+                offsetTop = $this.offset().top,
+                offsetBottom = $this.offset().top + $this.outerHeight();
+            if ((scrolledTop + win_height_padded < offsetTop) || (scrolledTop > offsetBottom)) {
+                $(this).removeClass('animated fadeInUp flipInX fadeInRight')
+            }
+        });
+    }
+
+    revealOnScroll();
+});</script>

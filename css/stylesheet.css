@@ -1,0 +1,786 @@
+@font-face {
+	font-family: DoubleBass;
+	src: url(fonts/DoubleBass-Regular.ttf),
+	url(fonts/DoubleBass-Light.ttf), url(fonts/DoubleBass-Bold.ttf), url(fonts/DoubleBass-Thin.ttf);
+}
+
+/******************** home.html classes *********************/
+
+html{
+	background: #F6F2E9;
+	overflow-x: hidden; /* hide horizontal */
+}
+	
+
+nav{
+	
+	overflow: hidden;
+	background-color: #333;
+	position: fixed;
+	z-index: 10
+}
+
+nav a{
+	font-family: DoubleBass;
+	font-weight: normal;
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+nav a:hover{
+	background-color: #ddd;
+	color: black;
+	-webkit-transition: background-color 1.2s, color 1.2s; /* Safari */
+ 	transition: background-color 1.2s, color 1.2s;
+	
+}
+
+#homepagePic {
+	width: 100%;
+	height: 82vh;
+	background: absolute;
+	z-index: 1;
+
+}
+
+.hands{
+	margin: -20vh 30vh 0vh 0vh;
+	position: realtive;
+	z-index: -1;
+}
+
+.hands img{
+	
+	float: right;
+	height: 7%;
+	width: 6%;
+	margin-left: 8vh;
+	margin-top: -2.5vh;
+	-webkit-transition: margin-top 1.2s;/* Safari */
+ 	transition: margin-top 1.2s;
+}
+
+.hands img:hover{
+	margin-top: -10vh;
+}
+
+
+.firstName{
+	margin-top: 2%;
+	font-weight: thin;
+}
+
+.contactUs img{
+	height: 20px;
+	width: 20px;
+	position: relative;
+	float: right;
+	margin: 5px ;
+	-webkit-transition: width 0.5s, height 0.5s; /* Safari */
+ 	transition: width 0.5s, height 0.5s;
+
+}
+
+.contactUs img:hover{
+	height: 30px;
+	width: 30px;
+	position: relative;
+	float: right;
+	margin: 5px ;
+}
+
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.circle{
+	background: #D73309;
+	opacity: 0.7;
+	width: 37.5vmin; 
+	height: 37.5vmin;
+	border-radius: 50%;
+	margin: 0 auto;
+	position: fixed;
+	z-index: 1;
+	top: -100px;
+	right: -70px;
+	-webkit-transition: width 1.2s, height 1.2s, box-shadow 1.2s; /* Safari */
+ 	transition: width 1.2s, height 1.2s, box-shadow 1.2s;
+ 
+}
+
+.quotes
+{
+	opacity: 0;
+	font-size:.9em;
+	line-height: 120%;
+	padding: 70px 0px 0px 20px;
+}
+
+.circle:hover{
+	width: 60vmin;
+	height: 60vmin;
+	opacity: 1;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.circle:hover .quotes{
+	opacity: 1;
+	-webkit-transition: opacity 1.2s;
+	transition: opacity 1.2s;
+}
+
+blockquote{
+	width: 300px;
+	height: 313px;
+	font-family: "Gill Sans";
+	font-weight: 300;
+	font-size: 15px;
+	text-align: center;
+	color: #fff;
+	position: absolute;
+  	bottom: 35px;
+  	left: 16px;
+
+}
+
+
+h1{
+	font-family: DoubleBass;
+	font-weight: normal;
+	font-size: 100px;
+	margin: 0 auto;
+}
+
+h2{
+	background-color: #D73309;
+	margin:150px 10px 10px;
+	font-family: DoubleBass;
+	font-weight: normal;
+	font-size: 80px;
+	position: absolute;
+	height: 100px;
+}
+
+h3{
+	background-color: #D73309;
+	margin:680px 10px 10px;
+	font-family: DoubleBass;
+	font-weight: normal;
+	font-size: 30px;
+	position: relative;
+	height: 0px;
+}
+
+.second{
+	margin-top: 598px;
+
+}
+
+.third{
+	margin-top: -50px;
+}
+
+p{
+	margin: 50px 50px  10px;
+	position: relative;
+	width: 40%;
+	line-height: 1.6;
+}
+
+
+/********************************* Resume.html classes ***************************/
+
+.circleRe{
+background: #D73309;
+	opacity: 1;
+	width: 140vmax; 
+	height: 140vmax;
+	border-radius: 50%;
+	margin: 0 auto;
+	position: absolute;
+	z-index: 1;
+	top: -500px;
+	right: -400px;
+}
+
+#carmenJones{
+	position: absolute;
+	margin: 10vh;
+
+}
+
+#psychoVideo{
+	position: absolute;
+	margin-top: -70vh;
+	margin-left: 2vw;
+}
+
+
+.lines {
+	z-index: 3;
+	position: absolute;
+
+}
+
+.revealOnScroll { 
+	opacity: 0; 
+}
+
+
+
+#yellowLine{
+	border-left: 10px solid yellow;
+	height: 700px;
+	margin: 15px;
+	float: left;
+	animation: moveYellowLine 3s 1;
+}
+
+@keyframes moveYellowLine 
+{
+  0% {height: 0px;}
+  100% {height: 700px;}
+}
+
+
+#blueLine{
+	
+	border-left: 10px solid blue;
+	border-bottom: 10px solid blue;
+	width: 640px;
+	height: 600px;
+	margin: 0px 0px 15px 58px;
+	float: left;
+	position: absolute;
+	animation: moveBlueLine 3s 1;
+}
+
+@keyframes moveBlueLine 
+{
+  0% {height: 0px; width: 0px;}
+  50% {height: 600px; width: 0px;}
+  100% {height: 600px; width: 640px;}
+  
+}
+
+#vBlueLine{
+
+	border-left: 10px solid blue;
+	border-bottom: 10px solid blue;
+	width: 800px;
+	height: 650px;
+	margin: 600px 0px 15px 700px;
+	float: left;
+	position: absolute;
+	animation: moveVBlueLine 6s 1;
+}
+
+@keyframes moveVBlueLine 
+{
+  0% {height: 0px; width: 0px; opacity:0;}
+  50% {height: 0px; width: 0px; opacity:0;}
+  51% {height: 0px; width: 0px; opacity:1;}
+  75% {height: 650px; width: 0px;}
+  100% {height: 650px; width: 800px;}
+  
+}
+
+#greenLine{
+	border-left: 10px solid #00FF14;
+	border-bottom: 10px solid #00FF14;
+	width: 1500px;
+	height: 550px;
+	margin: 0px 0px 15px 101px;
+	float: left;
+	position: absolute;
+	animation: moveGreenLine 3s 1;
+}
+
+@keyframes moveGreenLine 
+{
+  0% {height: 0px; width: 0px;}
+  50% {height: 550px; width: 0px;}
+  100% {height: 550px; width: 1500px;}  
+}
+
+#vGreenLine{
+	border-top: 10px solid #00FF14;
+	width: 300px;
+	margin: 1800px 0px 15px 0px;
+	float: left;
+	position: absolute;
+	animation: moveVGreenLine 3s 1;
+
+}
+
+@keyframes moveVGreenLine 
+{
+  0% {width: 0px;}
+  100% {width: 300px;}
+}
+
+
+#pinkLine{
+	border-left: 10px solid #FF2F87;
+	border-bottom: 10px solid #FF2F87;
+	width: 1500px;
+	height: 500px;
+	margin: 0px 0px 15px 144px;
+	float: left;
+	position: absolute;
+	animation: movePinkLine 3s 1;
+}
+
+@keyframes movePinkLine 
+{
+  0% {height: 0px; width: 0px;}
+  50% {height: 500px; width: 0px;}
+  100% {height: 500px; width: 1500px;}  
+}
+
+#purpleLine{
+	border-left: 10px solid #E245FF;
+	border-bottom: 10px solid #E245FF;
+	width: 1500px;
+	height: 450px;
+	margin: 0px 0px 15px 187px;
+	float: left;
+	position: absolute;
+	animation: movePurpleLine 3s 1;
+
+}
+
+@keyframes movePurpleLine 
+{
+  0% {height: 0px; width: 0px;}
+  50% {height: 450px; width: 0px;}
+  100% {height: 450px; width: 1500px;}  
+}
+
+#whiteLine{
+	border-left: 10px solid white;
+	border-bottom: 10px solid white;
+	width: 1500px;
+	height: 400px;
+	margin: 0px 0px 15px 230px;
+	float: left;
+	position: absolute;
+	animation: moveWhiteLine 3s 1;
+
+}
+
+@keyframes moveWhiteLine 
+{
+  0% {height: 0px; width: 0px;}
+  50% {height: 400px; width: 0px;}
+  100% {height: 400px; width: 1500px;}  
+}
+
+/****************************** archive.html classes ********************/
+
+.circleAr{
+	width: 140vmax;
+	height: 140vmax;
+	border-radius: 20%;
+	position: absolute;
+	background: #d73309;
+	transform: rotate(45deg);
+	top: -500px;
+	right: -400px;
+
+}
+
+
+#beeIcon{
+	width: 180px;
+	height: 180px;
+	position: absolute;
+	z-index: 2;
+	margin-left: 47%;
+	margin-top: 20%;
+	animation: moveBee 3s 1;
+}
+
+@keyframes moveBee 
+{
+  0% {margin-left:0%;}
+  100% {margin-left:47%;}
+  
+}
+
+
+#beeLine{
+	
+	border-left: 13.5px solid black;
+	width: 50px;
+	height: 27vmax;
+	position: absolute;
+	z-index: 2;
+	margin-left: 52.5%;
+	margin-top: 30%;
+	animation: moveBeeLine 4s 1;
+}
+
+@keyframes moveBeeLine 
+{
+  0% {height: 0%;opacity:0}
+  75% {height: 0%;opacity:0}
+  76% {height: 0%;opacity:1}
+  100% {height:27vmax; opacity:1}
+  
+}
+
+
+
+/*GALLERY HEXAGON*/
+
+#hexGrid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 50vmax 5.2%;
+  overflow: hidden;
+  font-family: sans-serif;
+  list-style-type: none;
+  position: absolute;
+
+
+}
+
+.hex {
+  position: relative;
+  visibility:hidden;
+  outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
+  transition: all 0.5s;
+  backface-visibility: hidden;
+  will-change: transform;
+  transition: all 0.5s;
+
+}
+.hex::after{
+  content:'';
+  display:block;
+  padding-bottom: 86.602%;  /* =  100 / tan(60) * 1.5 */
+}
+.hexIn{
+  position: absolute;
+  width:96%;
+  padding-bottom: 110.851%; /* =  width / sin(60) */
+  margin: 2%;
+  overflow: hidden;
+  visibility: hidden;
+  outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
+  -webkit-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+      -ms-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+          transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+    transition: all 0.5s;
+}
+.hexIn * {
+  position: absolute;
+  visibility: visible;
+  outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
+}
+
+.hexLink {
+    display:block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    -webkit-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+        -ms-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+            transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+}
+
+
+
+
+/*** HEX CONTENT **********************************************************************/
+.hex img {
+  left: -100%;
+  right: -100%;
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.hex h1, .hex p {
+  width: 100%;
+  padding: 5%;
+  box-sizing:border-box;
+  font-weight: 300;
+  opacity: 0;
+  margin: 0px 0px 0px;
+}
+
+#hexHeader {
+  color: #F5CE95;
+  text-transform: capitalize;
+    text-align: center;
+  bottom: 50%;
+  padding-top:50%;
+  font-size: 1em;
+  z-index: 1;
+}
+.hex h1:before, .hex h1:after {
+  display: inline-block;
+  margin: 0 0.5em;
+  width: 0.25em;
+  height: 0.03em;
+  background: #ffffff;
+  content: '';
+  vertical-align: middle;
+  transition: all 0.3s;
+  text-align:center;
+}
+
+#hexText {
+top: 50%;
+text-align: center;
+text-transform: uppercase;
+    
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.img:before, .img:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.img:before {
+  background: rgba(22, 103, 137, 0.3)
+}
+.img:after {
+  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.5), transparent);
+}
+
+/*** HOVER EFFECT  **********************************************************************/
+
+
+
+.hexLink:hover h1, .hexLink:focus h1,
+.hexLink:hover p, .hexLink:focus p{
+opacity:1;
+transition: 0.8s;
+}
+
+
+.hexIn:hover .img:before,
+.hexIn:hover .img:after,
+.hexIn:hover .hexLink {
+  opacity: 1;
+}
+
+
+/*** HEXAGON SIZING AND EVEN ROW INDENTATION *****************************************************************/
+
+@media (min-width: 1000px) { /* <- 4-3  hexagons per row */
+  #hexGrid{
+    padding-bottom: 5.5%;
+    font-size: 20px;
+  }
+  .hex {
+
+    width: 25%; /* = 100 / 4 */
+  }
+  .hex:nth-child(7n+5){ /* first hexagon of even rows */
+    margin-left:12.5%;  /* = width of .hex / 2  to indent even rows */
+  }
+}
+
+@media (max-width: 1000px) and (min-width:751px) { /* <- 3-2  hexagons per row */
+  #hexGrid{
+    padding-bottom: 7.4%;
+    font-size: 16px;
+  }
+  .hex {
+    width: 33.333%; /* = 100 / 3 */
+  }
+  .hex:nth-child(5n+4){ /* first hexagon of even rows */
+    margin-left:16.666%;  /* = width of .hex / 2  to indent even rows */
+  }
+}
+
+@media (max-width: 750px) { /* <- 2-1  hexagons per row */
+  #hexGrid{
+    padding-bottom: 11.2%;
+    font-size: 14px;
+  }
+  .hex {
+    width: 50%; /* = 100 / 3 */
+  }
+  .hex:nth-child(3n+3){ /* first hexagon of even rows */
+    margin-left:25%;  /* = width of .hex / 2  to indent even rows */
+  }
+}
+
+@media (max-width: 400px) {
+    #hexGrid {
+        font-size: 8px;
+    }
+  
+
+  
+ 
+}
+
+/***************************** films.html classes ***********************/
+
+#FyellowLine {
+	border-top: 5px solid yellow;
+	width: 70vmin;
+	margin-top: 20px;
+	margin-left: 17.5vh;
+	float: left;
+	animation: moveFYellowLine 3s 1 ease;
+}
+
+@keyframes moveFYellowLine {
+	0% {
+		margin-left: -20vh;
+	}
+	70% {
+		margin-left: 30vh;
+	}
+	100% {
+		margin-left: 17.5vh;
+	}
+}
+
+#FblueLine {
+	border-top: 5px solid blue;
+	width: 70vmin;
+	margin-left: 17.5vh;
+	float: left;
+	animation: moveFBlueLine 3s 1 ease;
+}
+
+@keyframes moveFBlueLine {
+	0% {
+		margin-left: 50vh;
+	}
+	70% {
+		margin-left: 0vh;
+	}
+	100% {
+		margin-left: 17.5vh;
+	}
+}
+
+#FgreenLine {
+	border-top: 5px solid #00FF14;
+	width: 70vmin;
+	margin-left: 17.5vh;
+	float: left;
+	animation: moveFgreenLine 3s 1 ease;
+}
+
+@keyframes moveFgreenLine {
+	0% {
+		margin-left: -20vh;
+	}
+	70% {
+		margin-left: 30vh;
+	}
+	100% {
+		margin-left: 17.5vh;
+	}
+}
+
+
+#FpinkLine {
+	border-top: 5px solid #FF2F87;
+	width: 70vmin;
+	margin-left: 17.5vh;
+	float: left;
+	animation: moveFpinkLine 3s 1 ease;
+}
+
+@keyframes moveFpinkLine {
+	0% {
+		margin-left: 50vh;
+	}
+	70% {
+		margin-left: 0vh;
+	}
+	100% {
+		margin-left: 17.5vh;
+	}
+}
+
+
+#FpurpleLine {
+	border-top: 5px solid #E245FF;
+	width: 70vmin;
+	margin-left: 17.5vh;
+	float: left;
+	animation: moveFpurpleLine 3s 1 ease;
+}
+
+@keyframes moveFpurpleLine {
+	0% {
+		margin-left: -20vh;
+	}
+	70% {
+		margin-left: 30vh;
+	}
+	100% {
+		margin-left: 17.5vh;
+	}
+}
+
+
+#FbrownLine {
+	border-top: 5px solid brown;
+	width: 70vmin;
+	margin-left: 17.5vh;
+	float: left;
+	animation: moveFbrownLine 3s 1 ease;
+}
+
+@keyframes moveFbrownLine {
+	0% {
+		margin-left: 50vh;
+	}
+	70% {
+		margin-left: 0vh;
+	}
+	100% {
+		margin-left: 17.5vh;
+	}
+}
+
+
+.videoGallery{
+	margin: 50vh;
+}
+
+.videoGallery iframe{
+	margin: 10vh;
+}
+
+
